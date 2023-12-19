@@ -2,7 +2,7 @@ import { Icon } from "@chakra-ui/react";
 import { IRoute } from "./types/navigation";
 
 import { FaRegChartBar, FaRocket, FaUsers, FaUser } from "react-icons/fa";
-import { BsFillMotherboardFill } from "react-icons/bs";
+import { BsFillMotherboardFill, BsMotherboard } from "react-icons/bs";
 import { GrArticle } from "react-icons/gr";
 import { IoMdSettings } from "react-icons/io";
 import { FiLogOut } from "react-icons/fi";
@@ -14,6 +14,19 @@ const MainRoute: IRoute[] = [
     path: "/statistic",
     icon: (
       <Icon as={FaRegChartBar} width="20px" height="20px" color="inherit" />
+    ),
+  },
+  {
+    name: "Master",
+    layout: "/admin",
+    path: "#",
+    icon: (
+      <Icon
+        as={BsFillMotherboardFill}
+        width="20px"
+        height="20px"
+        color="inherit"
+      />
     ),
   },
   {
@@ -39,8 +52,8 @@ const MainRoute: IRoute[] = [
 const AccountRoute: IRoute[] = [
   {
     name: "Profile",
-    layout: "/admin",
-    path: "#",
+    layout: "/account",
+    path: "/profile",
     icon: <Icon as={FaUser} width="20px" height="20px" color="inherit" />,
   },
   {
