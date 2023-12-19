@@ -30,7 +30,8 @@ const Sidebar = (props: SidebarProps) => {
       <Box
         bg={sidebarBg}
         transition={variantChange}
-        w="220px"
+        // w="220px"
+        w="300px"
         h="100vh"
         m={sidebarMargins}
         minH="100%"

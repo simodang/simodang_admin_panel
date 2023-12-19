@@ -32,7 +32,7 @@ const SidebarLinks = (props: SidebarLinksProps) => {
 
   const createLinks = (routes: IRoute[]) => {
     return routes.map((route, index: number) => {
-      if (route.layout === "/admin" || route.layout === "/auth") {
+      if (route.layout === "/admin" || route.layout === "/account") {
         return (
           <Link key={index} href={route.layout + route.path}>
             {route.icon ? (
