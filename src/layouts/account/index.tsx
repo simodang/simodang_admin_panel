@@ -14,13 +14,12 @@ import { MainRoute, AccountRoute } from "@/routes";
 import { SidebarContext } from "@/contexts/SidebarContext";
 import Navbar from "@/components/navbars/Navbar";
 import { getActiveNavbar, getActiveRoute } from "@/utils/navigation";
-import { usePathname } from "next/navigation";
 
 interface DashboardLayoutProps extends PropsWithChildren {
   [x: string]: any;
 }
 
-const AdminLayout = (props: DashboardLayoutProps) => {
+const AccountLayout = (props: DashboardLayoutProps) => {
   const { children, ...rest } = props;
   const [toggleSidebar, setToggleSidebar] = useState(false);
 
@@ -81,4 +80,4 @@ const AdminLayout = (props: DashboardLayoutProps) => {
   );
 };
 
-export default AdminLayout;
+export default AccountLayout;
